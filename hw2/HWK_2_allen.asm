@@ -25,8 +25,16 @@ constant_variable_sum equ 3*4*5*6*7*8 ;{ 21600d = 4EC0h = 4 nibbles = 16 bit = 1
 .code
 main proc
 cleareax ;{ Clear register.}
+call dumpregs ;{ Display results. }
 mov eax, constant_variable_sum ;{ Store variable in the lower 16 bits of the accumulator register. }
 call dumpregs ;{ Display results. }
+
+;{ ****** or ******** for truly one line. }
+cleareax ;{ Clear register.}
+call dumpregs ;{ Display results. }
+mov eax, 3*4*5*6*7*8 ;{ Store variable in the lower 16 bits of the accumulator register. }
+call dumpregs ;{ Display results. }
+
 
 ;{ Part 2.1: Write a small block of computational statements that causes the EBX register to set the carry flag. DO NOT USE STC. }
 .data
