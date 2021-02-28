@@ -4,7 +4,7 @@ comment*
         Name       : Brice Allen
         ID         : XXXXX2188
         Class      : CSCI 2525
-        Assignment : Homework three
+        Assignment : Homework three part one
         Due Date   : March 1, 2021
       *
 
